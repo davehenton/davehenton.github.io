@@ -5,20 +5,32 @@ body {background: brown;
 	display: inline-block;
 	border: medium solid navy;
 	padding: 10px;
+	margin: 20px;
 	}
 
-blockquote {
-	font-family: Gill, Helvetica, sans-serif;
-	font-size: 200%;
+#quote {
+	font-family:  Helvetica, sans-serif;
+	font-size: 100%;
 	text-align: center;
-	border: 5px navy;}
+	margin-top: 300px;
+	color: white;
 	}
 
 #facts {
 	color: white;
 	}
 
-
 #bgimage {
     background-image: url("dirt.jpg");
 }
+
+a:link {
+    color: blue;
+}
+
+
+a:visited {
+    color: gray;
+}
+
+=
