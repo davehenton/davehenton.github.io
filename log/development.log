@@ -1,0 +1,44 @@
+Started GET "/" for ::1 at 2016-10-15 01:57:29 -0700
+  
+ActionController::RoutingError (undefined method `helpers' for WelcomeHelper:Module):
+  
+app/helpers/welcome_helper.rb:2:in `<module:WelcomeHelper>'
+app/helpers/welcome_helper.rb:1:in `<top (required)>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/welcome_controller.rb:1:in `<top (required)>'
+  Rendering /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (9.0ms)
+  Rendered /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendering /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.9ms)
+  Rendered /Users/davehenton/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.9ms)
+Started GET "/" for ::1 at 2016-10-15 01:57:52 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 743ms (Views: 740.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/landing" for ::1 at 2016-10-15 01:58:18 -0700
+Processing by WelcomeController#landing as HTML
+  Rendering welcome/landing.html.erb within layouts/application
+  Rendered welcome/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-15 01:58:40 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-15 01:58:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
