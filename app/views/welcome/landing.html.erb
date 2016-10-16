@@ -1,6 +1,26 @@
 <h1>test</h1>
 
 
-<%= if @results %>
-<% p @results %>
+<% if @results %>
+
+<% list_for_widget = [] %>
+<% @results.each do |r|   %>
+<%	list_for_widget << r["uri"].split("track:")[1] %>
+<%	end   %>
+<% @list_without_quotes = list_for_widget.join(",") %>
+
+<%= p "got some shit" %>
+<%= p @list_without_quotes %>
+<% else %>
+<%= p "no results" %>
 <% end %>
+<%= p @list_without_quotes %>
+
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:5Z7ygHQo02SUrFmcgpwsKW,1x6ACsKV4UdWS2FMuPFUiT,4bi73jCM02fMpkI11Lqmfe" frameborder="0" allowtransparency="true"></iframe><br>
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:40riOy7x9W7GXjyGp4pjAv,10Nmj3JCNoMeBQ87uw5j8k,4ly1QBXEwYoDmje9rmEgC4" frameborder="0" allowtransparency="true"></iframe><br>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:<%=@list_without_quotes%>" frameborder="0" allowtransparency="true"></iframe><br>
