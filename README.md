@@ -1,3 +1,3 @@
 # daytripper
 
-An app that tells you the history for your current location.
+An app that tells you the wikipedia history for your current location.
